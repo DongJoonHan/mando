@@ -23,3 +23,6 @@ cloc-1.90.exe --by-file --csv . > cloc_result.csv
 ```
 cpd.bat --minimum-tokens 100 --files . --language cpp --format csv > cpd_result.csv
 ```
+
+
+// 코드 수정 가정
