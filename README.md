@@ -15,11 +15,11 @@ https://github.com/AlDanial/cloc/releases/tag/v1.90
 
 ## CLOC 실행
 ```
-cloc-1.90.exe --by-file --csv . > result.csv
+cloc-1.90.exe --by-file --csv . > cloc_result.csv
 ```
 
 ## CPD 실행
 100 Token 이상, C++ 을 대상으로 분석, 엑셀에서 확인하기 위해 csv로 출력해서 저장
 ```
-cpd.bat --minimum-tokens 100 --files . --language cpp --format csv > result.csv
+cpd.bat --minimum-tokens 100 --files . --language cpp --format csv > cpd_result.csv
 ```
