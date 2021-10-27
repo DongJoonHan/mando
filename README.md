@@ -26,3 +26,9 @@ cpd.bat --minimum-tokens 100 --files . --language cpp --format csv > cpd_result.
 
 
 // 코드 수정 가정
+
+
+## CPPChcek 실행
+```
+"c:\Program Files\Cppcheck\cppcheck.exe" cppcheck --enable=all --inconclusive --xml --xml-version=2 src 2> cppcheck.xml
+```
