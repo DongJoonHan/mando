@@ -15,7 +15,7 @@ lizard.exe -C 10 --csv > lizard_result.csv
 
 ## CLOC 실행
 ```
-cloc-1.90.exe --by-file --csv . > cloc_result.csv
+cloc-1.92.exe --by-file --csv . > cloc_result.csv
 ```
 
 ## CPD 실행
