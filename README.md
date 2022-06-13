@@ -11,7 +11,7 @@ lizard.exe -C 10 --csv > lizard_result.csv
 ```
 
 ## CLOC 다운로드
-https://github.com/AlDanial/cloc/releases/tag/v1.90
+[https://github.com/AlDanial/cloc/releases/tag/v1.90](https://github.com/AlDanial/cloc/releases/tag/v1.92)
 
 ## CLOC 실행
 ```
