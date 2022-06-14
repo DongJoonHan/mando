@@ -32,3 +32,9 @@ cpd.bat --minimum-tokens 100 --files . --language cpp --format csv > cpd_result.
 ```
 "c:\Program Files\Cppcheck\cppcheck.exe" --enable=all --inconclusive --xml --xml-version=2 src 2> cppcheck.xml
 ```
+
+## PICT 전수 조합 생성
+// 단, 옵션이 5개라는 가정
+```
+pict data.txt /o:5 > result2.xls
+```
