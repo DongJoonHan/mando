@@ -32,8 +32,16 @@ cloc-1.92.exe --by-file --csv . > cloc_result.csv
 cpd.bat --minimum-tokens 100 --files . --language cpp --format csv > cpd_result.csv
 ```
 
+### CPD Jenkins에서 실행
+```
+cpd --minimum-tokens 100 --files ./src --language cpp --format xml > cpd.xml || exit 0
+```
 
-// 코드 수정 가정
+### CPD Jenkins Report 설정
+![image](https://user-images.githubusercontent.com/8405564/176077844-ea35faa3-84aa-4455-84e4-b968bb0be7e2.png)
+
+
+
 
 
 ## CPPChcek 실행
