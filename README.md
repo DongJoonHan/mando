@@ -54,3 +54,29 @@ cpd --minimum-tokens 100 --files ./src --language cpp --format xml > cpd.xml || 
 ```
 pict data.txt /o:5 > result2.xls
 ```
+
+
+## Jenkins Pipeline 예제
+```
+pipeline {
+    agent  any
+    stages {
+        stage('SCM') {
+            steps {
+                git 'https://github.com/DongJoonHan/DirectXTK12.git'
+            }
+        }
+        
+        stage('VS Build') {
+            steps {
+                bat 'msbuild.exe DirectXTK_Desktop_2019_Win10.vcxproj'
+            }
+        }
+        
+        stage('Verification') {
+            steps {
+                bat 'cppcheck  --enable=all --inconclusive --xml --xml-version=2 src 2> cppcheck.xml'
+                recordIssues enabledForFailure: true, aggregatingResults: true, tool: cppCheck(pattern: 'cppcheck.xml')
+    }
+}
+```
